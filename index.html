@@ -583,14 +583,16 @@
           </ul>
           <h2></h2>
         </div>
-        <h2 class="">Підпишіться на розсилку</h2>
-        <label>
-          <input type="text" />
-        </label>
-        <button type="submit">Підписатися</button>
-        <svg class="" width="24" height="24">
-          <use href="./images/icons.svg#send"></use>
-        </svg>
+        <h2 class="form-fotter-titel">Підпишіться на розсилку</h2>
+        <form class="form-fotter">
+          <label class="form-group-fotter">
+            <input class="form-input-fotter" type="text" />
+          </label>
+          <button class="form-fotter-btn" type="submit">Підписатися</button>
+          <svg class="form-fotter-icon" width="24" height="24">
+            <use href="./images/icons.svg#send"></use>
+          </svg>
+        </form>
       </div>
     </footer>
     <!--Modal window-->
@@ -606,7 +608,7 @@
           <div class="form-container">
             <label class="form-group">
               <span class="form-label">Ім'я</span>
-              <input class="form-input" type="text" name="user-name" autofocus />
+              <input class="form-input" type="text" name="user-name" />
               <svg class="form-icon" width="18" height="18">
                 <use href="./images/icons.svg#person"></use>
               </svg>
@@ -627,7 +629,12 @@
             </label>
             <label class="form-group">
               <span class="form-label">Коментар</span>
-              <input class="form-input" type="text" name="user-commet" />
+              <input
+                class="form-input"
+                type="text"
+                name="user-commet"
+                placeholder="Введіть текст"
+              />
             </label>
             <button class="madal-form-btn" type="submit">Відправити</button>
           </div>
