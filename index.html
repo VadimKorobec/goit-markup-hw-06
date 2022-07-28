@@ -583,16 +583,19 @@
           </ul>
           <h2></h2>
         </div>
-        <h2 class="form-fotter-titel">Підпишіться на розсилку</h2>
-        <form class="form-fotter">
-          <label class="form-group-fotter">
-            <input class="form-input-fotter" type="text" />
-          </label>
-          <button class="form-fotter-btn" type="submit">Підписатися</button>
-          <svg class="form-fotter-icon" width="24" height="24">
-            <use href="./images/icons.svg#send"></use>
-          </svg>
-        </form>
+        <div class="form-container-fotter">
+          <h2 class="form-fotter-titel">Підпишіться на розсилку</h2>
+          <form class="form-fotter">
+            <label class="form-group-fotter">
+              <input class="form-input-fotter" type="email" placeholder="E-mail" />
+            </label>
+            <button class="form-fotter-btn" type="submit">
+              Підписатися<svg class="form-fotter-icon" width="24" height="24">
+                <use href="./images/icons.svg#send"></use>
+              </svg>
+            </button>
+          </form>
+        </div>
       </div>
     </footer>
     <!--Modal window-->
@@ -629,15 +632,25 @@
             </label>
             <label class="form-group">
               <span class="form-label">Коментар</span>
-              <input
-                class="form-input"
-                type="text"
+              <textarea
+                class="form-textaria"
                 name="user-commet"
+                rows="10"
                 placeholder="Введіть текст"
-              />
+              ></textarea>
             </label>
-            <button class="madal-form-btn" type="submit">Відправити</button>
+            <label class="form-checbox">
+              <input class="form-checbox" type="checkbox" name="user-rules" value="rules" />
+              <svg class="form-icon" width="16" height="15">
+                <use href="./images/icons.svg#check"></use>
+              </svg>
+              <span class="form-label"
+                >Погоджуюся з розсилкою та приймаю
+                <a class="rules" href="" target="_blank">Умови договору</a></span
+              >
+            </label>
           </div>
+          <button class="madal-form-btn" type="submit">Відправити</button>
         </form>
       </div>
     </div>
