@@ -865,16 +865,12 @@ a {
 |============================
 */
 
-.form-container {
-  display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
-}
-
 .form-titel {
   display: block;
   padding-top: 40px;
   margin-bottom: 12px;
+  margin-left: auto;
+  margin-right: auto;
 
   font-size: 20px;
   line-height: calc(23 / 20);
@@ -882,6 +878,12 @@ a {
   letter-spacing: 0.03em;
 
   color: #212121;
+}
+
+.form-group {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .form-label {
