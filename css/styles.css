@@ -29,7 +29,11 @@ body {
   overflow: hidden;
 }
 
-/* Частковий ресет стилей браузера start */
+/**
+|============================
+| Частковий ресет стилей браузера start
+|============================
+*/
 
 h1,
 h2,
@@ -57,9 +61,17 @@ a {
   color: currentColor;
 }
 
-/* Частковий ресет стилей браузера end */
+/**
+|============================
+| Частковий ресет стилей браузера end
+|============================
+*/
 
-/* Base styles */
+/**
+|============================
+| Base styles
+|============================
+*/
 
 .container {
   width: 1200px;
@@ -75,7 +87,11 @@ a {
   padding-bottom: 94px;
 }
 
-/* Card set */
+/**
+|============================
+| Card set
+|============================
+*/
 
 .card-set {
   display: flex;
@@ -87,7 +103,11 @@ a {
   flex-basis: calc((100% - var(--indent) * (var(--items) - 1)) / var(--items));
 }
 
-/* Header section */
+/**
+|============================
+| Header section
+|============================
+*/
 
 .header {
   border: 1px solid #ececec;
@@ -248,7 +268,11 @@ a {
   color: #2196f3;
 }
 
-/* hero section */
+/**
+|============================
+| hero section
+|============================
+*/
 
 .hero {
   text-align: center;
@@ -316,7 +340,11 @@ a {
   border: none;
 }
 
-/* offer section */
+/**
+|============================
+| offer section
+|============================
+*/
 
 .offer.section {
   padding-bottom: 0;
@@ -358,7 +386,11 @@ a {
   line-height: 1.71;
 }
 
-/* doing section */
+/**
+|============================
+| doing section
+|============================
+*/
 
 .section-top {
   padding-top: 0;
@@ -401,7 +433,11 @@ a {
   background: rgba(47, 48, 58, 0.8);
 }
 
-/* team section */
+/**
+|============================
+| team section
+|============================
+*/
 
 .team {
   background-color: #f5f4fa;
@@ -454,7 +490,11 @@ a {
   text-align: center;
 }
 
-/* Clients setion */
+/**
+|============================
+| Clients setion
+|============================
+*/
 
 .clients-titel {
   margin-bottom: 50px;
@@ -506,7 +546,11 @@ a {
   fill: #2196f3;
 }
 
-/* footer section */
+/**
+|============================
+| footer section
+|============================
+*/
 
 .footer {
   background-color: #2f303a;
@@ -633,6 +677,12 @@ a {
   background-color: #2196f3;
 }
 
+/**
+|============================
+| Form Fotter
+|============================
+*/
+
 .form-fotter-titel {
   margin-bottom: 20px;
 
@@ -658,13 +708,20 @@ a {
   background-color: #2f303a;
   border: 1px solid rgba(255, 255, 255, 0.3);
   filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  outline: none;
   border-radius: 4px;
 }
 
+.form-input-fotter::placeholder {
+  font-size: 16px;
+  line-height: calc(20 / 16);
+  color: rgba(255, 255, 255, 0.6);
+}
+
 .form-fotter-btn {
-  display: flex;
+  display: inline-flex;
   align-items: center;
-  text-align: center;
+  justify-content: center;
   gap: 10px;
 
   min-width: 200px;
@@ -683,7 +740,11 @@ a {
   cursor: pointer;
 }
 
-/* Portfolio section */
+/**
+|============================
+| Portfolio section
+|============================
+*/
 
 .button-list {
   display: flex;
@@ -808,7 +869,11 @@ a {
   margin: -1px;
 }
 
-/* Socials icons */
+/**
+|============================
+| Socials icons
+|============================
+*/
 
 .socials {
   display: flex;
@@ -845,7 +910,11 @@ a {
   fill: #ffffff;
 }
 
-/* Modal window */
+/**
+|============================
+| Modal window
+|============================
+*/
 
 .backdrop {
   position: fixed;
@@ -874,6 +943,7 @@ a {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%) scale(1);
+  padding: 40px;
 
   width: 528px;
   height: 581px;
@@ -932,7 +1002,6 @@ a {
 
 .form-titel {
   display: block;
-  padding-top: 40px;
   margin-bottom: 12px;
   margin-left: auto;
   margin-right: auto;
@@ -957,17 +1026,29 @@ a {
   line-height: calc(14 / 12);
   letter-spacing: 0.01em;
   color: #757575;
-  cursor: pointer;
 }
 
 .form-input {
   display: block;
   width: 448px;
   height: 40px;
+  padding-left: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  outline: none;
   cursor: pointer;
+  transition: border-color var(--timeng-function);
+}
+
+.form-input:hover,
+.form-input:focus {
+  border-color: #2196f3;
+}
+
+.form-input:hover + .form-icon,
+.form-input:focus + .form-icon {
+  fill: #2196f3;
 }
 
 .form-textaria {
@@ -978,19 +1059,43 @@ a {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   resize: none;
+  outline: none;
+  transition: border-color var(--timeng-function);
   cursor: pointer;
 }
 
+.form-textaria:hover,
+.form-textaria:focus {
+  border-color: #2196f3;
+}
+
+.form-textaria::placeholder {
+  font-size: 12px;
+  line-height: calc(14 / 12);
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+}
+
 .form-checbox {
-  display: block;
+  display: flex;
+  justify-content: center;
+  gap: 7px;
   margin-bottom: 30px;
   text-align: center;
+}
+
+.text-checbox {
+  font-size: 14px;
+  line-height: calc(24 / 14);
+  letter-spacing: 0.03em;
+  color: #757575;
 }
 
 .form-icon {
   position: absolute;
   top: 30px;
   left: 12px;
+  transition: fill var(--timeng-function);
 }
 
 .rules {
