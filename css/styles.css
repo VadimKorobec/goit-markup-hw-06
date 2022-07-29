@@ -1113,17 +1113,22 @@ a {
   transition: fill var(--timeng-function);
 }
 
-.form-icons-smile {
+.form-icon-right {
   position: absolute;
   top: 30px;
   right: 12px;
 }
 
-.form-icons-angry {
-  position: absolute;
-  top: 30px;
-  right: 12px;
+.form-icons-sad {
+  fill: red;
+  opacity: 1;
 }
+
+.form-icons-smile {
+  fill: green;
+  opacity: 0;
+}
+
 .checbox-link {
   text-underline-position: under;
   text-decoration: underline;
