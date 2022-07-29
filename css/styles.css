@@ -1042,10 +1042,12 @@ a {
   transition: border-color var(--timeng-function);
 }
 
+.form-input:hover,
 .form-input:focus {
   border-color: #2196f3;
 }
 
+.form-input:hover + .form-icon,
 .form-input:focus + .form-icon {
   fill: #2196f3;
 }
@@ -1102,7 +1104,7 @@ a {
   transition: border-color var(--timeng-function);
   cursor: pointer;
 }
-
+.form-textaria:hover,
 .form-textaria:focus {
   border-color: #2196f3;
 }
