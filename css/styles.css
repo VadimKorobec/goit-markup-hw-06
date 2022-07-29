@@ -1033,6 +1033,7 @@ a {
   width: 448px;
   height: 40px;
   padding-left: 42px;
+  padding-right: 42px;
 
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
@@ -1049,6 +1050,30 @@ a {
 .form-input:hover + .form-icon,
 .form-input:focus + .form-icon {
   fill: #2196f3;
+}
+
+.form-icon {
+  position: absolute;
+  top: 30px;
+  left: 12px;
+  transition: fill var(--timeng-function);
+}
+
+.form-icon-right {
+  position: absolute;
+  top: 30px;
+  right: 12px;
+  transition: fill var(--timeng-function);
+}
+
+.form-icons-sad {
+  fill: red;
+  opacity: 1;
+}
+
+.form-icons-smile {
+  fill: green;
+  opacity: 0;
 }
 
 .form-textaria {
@@ -1104,29 +1129,6 @@ a {
   letter-spacing: 0.03em;
   color: #757575;
   user-select: none;
-}
-
-.form-icon {
-  position: absolute;
-  top: 30px;
-  left: 12px;
-  transition: fill var(--timeng-function);
-}
-
-.form-icon-right {
-  position: absolute;
-  top: 30px;
-  right: 12px;
-}
-
-.form-icons-sad {
-  fill: red;
-  opacity: 1;
-}
-
-.form-icons-smile {
-  fill: green;
-  opacity: 0;
 }
 
 .checbox-link {
