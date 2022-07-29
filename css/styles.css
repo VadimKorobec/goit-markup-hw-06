@@ -737,7 +737,13 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   border: none;
+  transition: background-color var(--timeng-function);
   cursor: pointer;
+}
+
+.form-fotter-btn:hover,
+.form-fotter-btn:focus {
+  background-color: #188ce8;
 }
 
 /**
