@@ -1067,13 +1067,23 @@ a {
 }
 
 .form-icons-sad {
-  fill: red;
-  opacity: 1;
+  fill: rgb(255, 0, 0);
 }
 
 .form-icons-smile {
-  fill: green;
+  fill: rgb(15, 128, 0);
+}
+
+.form-icons-sad,
+.form-icons-smile {
   opacity: 0;
+  transform: scale(0.4);
+  transition: opacity var(--timeng-function), transform var(--timeng-function);
+}
+
+.form-input:invalid:required:not(:placeholder-shown) ~ .form-icon-right .form-icons-sad {
+  opacity: 1;
+  transform: scale(1);
 }
 
 .form-textaria {
